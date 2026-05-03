@@ -9,7 +9,12 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 **Problem Statement**: Create a `Smartphone` class.
 - **Fields**: `brand`, `model`, `price`.
 - **Method**: `displayInfo()` that prints "This is a [brand] [model] costing $[price]".
-- **Task**: In `main`, create two different phone objects (e.g., iPhone and Samsung), set their details, and display their info.
+**Sample Input**: None (Values set in code)
+**Sample Output**: 
+```text
+This is a Apple iPhone 15 costing $999.0
+This is a Samsung Galaxy S23 costing $899.0
+```
 
 ---
 
@@ -18,7 +23,13 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 **Problem Statement**: Create a `Student` class that uses a constructor.
 - **Fields**: `name`, `grade`.
 - **Constructor**: Use `this` to initialize `name` and `grade` when a student is created.
-- **Task**: Create a student object by passing "Rahul" and "A" to the constructor, then print "Student Rahul is in grade A".
+- **Task**: Create a student object by passing "Rahul" and "A" to the constructor, then print the result.
+
+**Sample Input**: None (Passed to constructor)
+**Sample Output**: 
+```text
+Student Rahul is in grade A
+```
 
 ---
 
@@ -29,7 +40,15 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 - **Methods**: 
     - `setPassword(String pass)`: Only sets the password if it's longer than 6 characters.
     - `getPassword()`: Returns the password.
-- **Task**: Try setting a 4-character password and then an 8-character one. Check if the protection works.
+- **Task**: Try setting a 4-character password and then an 8-character one. 
+
+**Sample Input**: None (Hardcoded tests)
+**Sample Output**: 
+```text
+Error: Password too short!
+Password set successfully.
+Password: secret123
+```
 
 ---
 
@@ -38,7 +57,13 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 **Problem Statement**: Create a `Book` class that tracks how many books exist.
 - **Fields**: `title` (Instance), `static int totalBooks` (Static).
 - **Constructor**: Every time a `Book` is created, increment `totalBooks`.
-- **Task**: Create 3 different books and print "Total books in library: 3" using the class name `Book.totalBooks`.
+- **Task**: Create 3 different books and print the total count.
+
+**Sample Input**: None
+**Sample Output**: 
+```text
+Total books in library: 3
+```
 
 ---
 
@@ -47,7 +72,14 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 **Problem Statement**: Create a Parent class `Human` and a Child class `Programmer`.
 - **Human**: Has a method `walk()` that prints "Walking...".
 - **Programmer**: Inherits from `Human` and adds a method `code()` that prints "Coding...".
-- **Task**: Create a `Programmer` object and show that they can both `walk()` and `code()`.
+- **Task**: Create a `Programmer` object and show its capabilities.
+
+**Sample Input**: None
+**Sample Output**: 
+```text
+Walking...
+Coding...
+```
 
 ---
 
@@ -57,7 +89,14 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 - **Animal**: Method `makeSound()` prints "Some sound".
 - **Dog**: Overrides `makeSound()` to print "Bark!".
 - **Lion**: Overrides `makeSound()` to print "Roar!".
-- **Task**: Use a loop or individual calls to show that the same method `makeSound()` acts differently for each animal.
+- **Task**: Demonstrate how the same method acts differently.
+
+**Sample Input**: None
+**Sample Output**: 
+```text
+Bark!
+Roar!
+```
 
 ---
 
@@ -67,7 +106,14 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 - **Abstract Method**: `abstract void use()`.
 - **Subclass `Pen`**: Implements `use()` to print "Writing...".
 - **Subclass `Brush`**: Implements `use()` to print "Painting...".
-- **Task**: You cannot create a `new Tool()`, so create a `Pen` and a `Brush` and call their `use()` methods.
+- **Task**: Create a `Pen` and a `Brush` and call their `use()` methods.
+
+**Sample Input**: None
+**Sample Output**: 
+```text
+Writing...
+Painting...
+```
 
 ---
 
@@ -78,7 +124,14 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 - **Implementations**:
     - `Light`: Prints "Light is glowing."
     - `Fan`: Prints "Fan is spinning."
-- **Task**: Use the `Switchable` interface to control both a Light and a Fan.
+- **Task**: Use the `Switchable` interface to control devices.
+
+**Sample Input**: None
+**Sample Output**: 
+```text
+Light is glowing.
+Fan is spinning.
+```
 
 ---
 
