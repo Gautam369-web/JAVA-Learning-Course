@@ -34,6 +34,12 @@ public class Main {
 }
 ```
 
+**Output**:
+```text
+This is a Apple iPhone 15 costing $999.0
+This is a Samsung Galaxy S23 costing $899.0
+```
+
 ---
 
 ## Solution 2: The New Student (Constructors & `this`)
@@ -58,6 +64,11 @@ public class Main {
         s.show();
     }
 }
+```
+
+**Output**:
+```text
+Student Rahul is in grade A
 ```
 
 ---
@@ -91,6 +102,13 @@ public class Main {
 }
 ```
 
+**Output**:
+```text
+Error: Password too short!
+Password set successfully.
+Password: secret123
+```
+
 ---
 
 ## Solution 4: The Shared Library (Static Members)
@@ -116,6 +134,11 @@ public class Main {
 }
 ```
 
+**Output**:
+```text
+Total books in library: 3
+```
+
 ---
 
 ## Solution 5: Family DNA (Inheritance)
@@ -139,6 +162,12 @@ public class Main {
         p.code(); // Own method
     }
 }
+```
+
+**Output**:
+```text
+Walking...
+Coding...
 ```
 
 ---
@@ -176,6 +205,12 @@ public class Main {
 }
 ```
 
+**Output**:
+```text
+Bark!
+Roar!
+```
+
 ---
 
 ## Solution 7: The Drawing Tool (Abstract Classes)
@@ -206,6 +241,12 @@ public class Main {
 }
 ```
 
+**Output**:
+```text
+Writing...
+Painting...
+```
+
 ---
 
 ## Solution 8: The Smart Home (Interfaces)
@@ -234,4 +275,10 @@ public class Main {
         f.turnOn();
     }
 }
+```
+
+**Output**:
+```text
+Light is glowing.
+Fan is spinning.
 ```
