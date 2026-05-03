@@ -1,10 +1,10 @@
-# Chapter 3 – Object-Oriented Programming (OOP)
+# Chapter 4 – Object-Oriented Programming (OOP)
 
 Welcome to the heart of Java! OOP allows you to model real-world things using **Classes** and **Objects**.
 
 ---
 
-## Goals of Chapter 3
+## Goals of Chapter 4
 - **Model Reality**: Learn to represent real-world entities using Classes and Objects.
 - **Master the 4 Pillars**: Deep dive into **Encapsulation, Inheritance, Polymorphism, and Abstraction**.
 - **Code Organization**: Understand how to structure code for reusability and security.
@@ -13,17 +13,17 @@ Welcome to the heart of Java! OOP allows you to model real-world things using **
 ## Sub-topics
 | Section | Topic | Description |
 | :--- | :--- | :--- |
-| **3.1** | **Classes & Objects** | Fields, Methods, and Instantiation |
-| **3.2** | **Constructors & `this`** | Object initialization and current instance reference |
-| **3.3** | **Access Modifiers** | `private`, `public`, `protected`, and Encapsulation |
-| **3.4** | **Static Members** | Class-level variables and methods |
-| **3.5** | **Inheritance** | Code reuse using the `extends` keyword |
-| **3.6** | **Polymorphism** | Method Overriding and Dynamic Method Dispatch |
-| **3.7** | **Abstraction** | Using `abstract` classes and `interfaces` |
+| **4.1** | **Classes & Objects** | Fields, Methods, and Instantiation |
+| **4.2** | **Constructors & `this`** | Object initialization and current instance reference |
+| **4.3** | **Access Modifiers** | `private`, `public`, `protected`, and Encapsulation |
+| **4.4** | **Static Members** | Class-level variables and methods |
+| **4.5** | **Inheritance** | Code reuse using the `extends` keyword |
+| **4.6** | **Polymorphism** | Method Overriding and Dynamic Method Dispatch |
+| **4.7** | **Abstraction** | Using `abstract` classes and `interfaces` |
 
 ---
 
-## 3.1 Classes & Objects: The Blueprint and the Reality
+## 4.1 Classes & Objects: The Blueprint and the Reality
 
 ### 🏠 Real-Life Analogy
 Imagine an **Architect's Blueprint** for a house. 
@@ -77,7 +77,7 @@ Battery is at: 85%
 
 ---
 
-## 3.2 Constructors & `this`: The "Birth" of an Object
+## 4.2 Constructors & `this`: The "Birth" of an Object
 
 ### 👶 Real-Life Analogy
 When a baby is born, they are usually given a **name** and **identity** immediately. You don't create a baby and then wait 10 days to decide what their name is. 
@@ -122,7 +122,7 @@ Hi, I am Alice and I am 20 years old.
 
 ---
 
-## 3.3 Access Modifiers: The "Privacy Settings" (Encapsulation)
+## 4.3 Access Modifiers: The "Privacy Settings" (Encapsulation)
 
 ### 🔒 Real-Life Analogy
 Think of your **Smartphone** again.
@@ -180,7 +180,7 @@ Current Balance: $700.0
 
 ---
 
-## 3.4 Static Members: The "Shared Bulletin Board"
+## 4.4 Static Members: The "Shared Bulletin Board"
 
 ### 📌 Real-Life Analogy
 Imagine a classroom.
@@ -226,7 +226,7 @@ Student: Bob, School: Elite Academy
 
 ---
 
-## 3.5 Inheritance: The "DNA" (Code Reuse)
+## 4.5 Inheritance: The "DNA" (Code Reuse)
 
 ### 🧬 Real-Life Analogy
 You inherit traits from your parents (eye color, height). You don't have to "re-invent" how to have eyes; you just get that from your parents and then add your own unique personality. 
@@ -272,7 +272,7 @@ Brand: Generic, Doors: 4
 
 ---
 
-## 3.6 Polymorphism: "One Name, Many Forms"
+## 4.6 Polymorphism: "One Name, Many Forms"
 
 ### 🎭 Real-Life Analogy
 Think of the word **"Play"**.
@@ -312,7 +312,7 @@ Dog says: Woof Woof!
 
 ---
 
-## 3.7 Abstraction: The "Remote Control"
+## 4.7 Abstraction: The "Remote Control"
 
 ### 📺 Real-Life Analogy
 When you use a **TV Remote**, you press the "Power" button. 

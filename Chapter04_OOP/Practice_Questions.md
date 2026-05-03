@@ -1,11 +1,11 @@
-# Chapter 3 – OOP Practice Questions
+# Chapter 4 – OOP Practice Questions
 
-These 8 questions are designed to test your understanding of each sub-topic covered in the Chapter 3 notes.
+These 8 questions are designed to test your understanding of each sub-topic covered in the Chapter 4 notes.
 
 ---
 
 ## Problem 1 – The Smartphone (Classes & Objects)
-**Topic**: Section 3.1
+**Topic**: Section 4.1
 **Problem Statement**: Create a `Smartphone` class.
 - **Fields**: `brand`, `model`, `price`.
 - **Method**: `displayInfo()` that prints "This is a [brand] [model] costing $[price]".
@@ -23,7 +23,7 @@ This is a Samsung Galaxy S23 costing $899.0
 ---
 
 ## Problem 2 – The New Student (Constructors & `this`)
-**Topic**: Section 3.2
+**Topic**: Section 4.2
 **Problem Statement**: Create a `Student` class that uses a constructor.
 - **Fields**: `name`, `grade`.
 - **Constructor**: Use `this` to initialize `name` and `grade` when a student is created.
@@ -41,7 +41,7 @@ Student Rahul is in grade A
 ---
 
 ## Problem 3 – The Secret Vault (Encapsulation)
-**Topic**: Section 3.3
+**Topic**: Section 4.3
 **Problem Statement**: Create a `User` class to protect a `password`.
 - **Fields**: `private String password`.
 - **Methods**: 
@@ -63,7 +63,7 @@ Password: secret123
 ---
 
 ## Problem 4 – The Shared Library (Static Members)
-**Topic**: Section 3.4
+**Topic**: Section 4.4
 **Problem Statement**: Create a `Book` class that tracks how many books exist.
 - **Fields**: `title` (Instance), `static int totalBooks` (Static).
 - **Constructor**: Every time a `Book` is created, increment `totalBooks`.
@@ -81,7 +81,7 @@ Total books in library: 3
 ---
 
 ## Problem 5 – Family DNA (Inheritance)
-**Topic**: Section 3.5
+**Topic**: Section 4.5
 **Problem Statement**: Create a Parent class `Human` and a Child class `Programmer`.
 - **Human**: Has a method `walk()` that prints "Walking...".
 - **Programmer**: Inherits from `Human` and adds a method `code()` that prints "Coding...".
@@ -100,7 +100,7 @@ Coding...
 ---
 
 ## Problem 6 – Animal Voices (Polymorphism/Overriding)
-**Topic**: Section 3.6
+**Topic**: Section 4.6
 **Problem Statement**: Create a base class `Animal` and subclasses `Dog` and `Lion`.
 - **Animal**: Method `makeSound()` prints "Some sound".
 - **Dog**: Overrides `makeSound()` to print "Bark!".
@@ -120,7 +120,7 @@ Roar!
 ---
 
 ## Problem 7 – The Drawing Tool (Abstract Classes)
-**Topic**: Section 3.7
+**Topic**: Section 4.7
 **Problem Statement**: Create an abstract class `Tool`.
 - **Abstract Method**: `abstract void use()`.
 - **Subclass `Pen`**: Implements `use()` to print "Writing...".
@@ -140,7 +140,7 @@ Painting...
 ---
 
 ## Problem 8 – The Smart Home (Interfaces)
-**Topic**: Section 3.7
+**Topic**: Section 4.7
 **Problem Statement**: Create an interface `Switchable`.
 - **Method**: `void turnOn()`.
 - **Implementations**:
