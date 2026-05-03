@@ -13,6 +13,28 @@ This is the final milestone of your Java journey. This project demonstrates how 
 - **Robustness**: The menu uses try-catch blocks, so it won't crash if you type "hello" instead of "1".
 - **Background Operations**: A "Daemon Thread" runs in the background to save your data every 30 seconds automatically.
 
+## 🖥️ Sample Run (Output)
+```text
+--- Welcome to the Smart Library System ---
+
+1. Add Book | 2. View All | 3. Search Author | 4. Exit
+Choice: 1
+Enter Title: Java Mastery
+Enter Author: Gautam
+Enter Price: 49.99
+Book added successfully!
+
+1. Add Book | 2. View All | 3. Search Author | 4. Exit
+Choice: 2
+Title: Java Mastery    | Author: Gautam     | Price: $49.99
+
+[SYSTEM]: Background Auto-Save completed.
+
+1. Add Book | 2. View All | 3. Search Author | 4. Exit
+Choice: 4
+Data saved. Goodbye!
+```
+
 ## 🎓 Final Conclusion
 By completing this project, you have proved your mastery over:
 - Basic Syntax & Logic

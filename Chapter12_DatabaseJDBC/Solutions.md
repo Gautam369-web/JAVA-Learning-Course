@@ -19,6 +19,10 @@ public class Main {
     }
 }
 ```
+**Output**:
+```text
+Connected!
+```
 
 ---
 
@@ -40,6 +44,10 @@ public class Main {
     }
 }
 ```
+**Output**:
+```text
+Student inserted.
+```
 
 ---
 
@@ -58,6 +66,10 @@ public class Main {
         }
     }
 }
+```
+**Output**:
+```text
+5 products updated.
 ```
 
 ---
@@ -80,6 +92,11 @@ public class Main {
     }
 }
 ```
+**Output**:
+```text
+User Email: rahul@example.com
+User Email: gautam@example.com
+```
 
 ---
 
@@ -99,6 +116,10 @@ public class Main {
     }
 }
 ```
+**Output**:
+```text
+Inactive users removed.
+```
 
 ---
 
@@ -116,10 +137,15 @@ public class Main {
             
             pstmt.setString(1, searchTitle);
             ResultSet rs = pstmt.executeQuery();
+            System.out.println("Searching for: " + searchTitle);
             // ... process results
         }
     }
 }
+```
+**Output**:
+```text
+Searching for: Java Programming
 ```
 
 ---
@@ -141,6 +167,10 @@ public class Main {
         }
     }
 }
+```
+**Output**:
+```text
+Total items: 42
 ```
 
 ---
@@ -167,4 +197,8 @@ public class Main {
         }
     }
 }
+```
+**Output**:
+```text
+Transfer complete.
 ```

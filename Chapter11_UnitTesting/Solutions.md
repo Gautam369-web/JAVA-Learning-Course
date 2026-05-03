@@ -17,6 +17,10 @@ class StringTest {
     }
 }
 ```
+**Output**:
+```text
+✔ testLength() PASSED
+```
 
 ---
 
@@ -37,6 +41,10 @@ class AuthTest {
     }
 }
 ```
+**Output**:
+```text
+✔ testLogin() PASSED
+```
 
 ---
 
@@ -52,6 +60,10 @@ class CalcTest {
         assertEquals(6, result, "Subtraction logic failed!");
     }
 }
+```
+**Output**:
+```text
+✔ testSub() PASSED
 ```
 
 ---
@@ -83,6 +95,11 @@ class ListTest {
     }
 }
 ```
+**Output**:
+```text
+✔ testSize() PASSED
+✔ testEmpty() PASSED
+```
 
 ---
 
@@ -105,6 +122,10 @@ class PriceTest {
     }
 }
 ```
+**Output**:
+```text
+✔ testException() PASSED (Caught expected IllegalArgumentException)
+```
 
 ---
 
@@ -125,6 +146,10 @@ class DBTest {
     }
 }
 ```
+**Output**:
+```text
+✔ testNotFound() PASSED
+```
 
 ---
 
@@ -144,6 +169,10 @@ class SortTest {
     }
 }
 ```
+**Output**:
+```text
+✔ testSort() PASSED
+```
 
 ---
 
@@ -162,4 +191,8 @@ class SpeedTest {
         });
     }
 }
+```
+**Output**:
+```text
+✔ testPerformance() PASSED (Finished in 105ms)
 ```
