@@ -1,98 +1,12 @@
-# Chapter 2 – Control Flow Practice Problems
+# Chapter 2 – Practice Problem Solutions
 
-## Problem 1 – Multiplication Table
-**Statement**: Given an integer `n (1 ≤ n ≤ 20)`, print the multiplication table of `n` from `1×n` to `10×n`.
-**Input**: Single integer `n`.
-**Output**: Ten lines, each line in the format `i * n = result`.
-
-### Solution (`MultiplicationTable.java`)
-```java
-import java.util.Scanner;
-
-public class MultiplicationTable {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt(); // read n
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i + " * " + n + " = " + (i * n));
-        }
-        sc.close();
-    }
-}
-```
----
-## Problem 2 – Prime Checker
-**Statement**: Determine whether a given integer `p` (> 1) is a prime number.
-**Input**: One integer `p`.
-**Output**: `Prime` if `p` is prime, otherwise `Not Prime`.
-
-### Solution (`PrimeChecker.java`)
-```java
-import java.util.Scanner;
-
-public class PrimeChecker {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int p = sc.nextInt(); // read p
-        if (p <= 1) {
-            System.out.println("Not Prime");
-            sc.close();
-            return;
-        }
-        boolean isPrime = true;
-        for (int i = 2; i * i <= p; i++) {
-            if (p % i == 0) {
-                isPrime = false;
-                break;
-            }
-        }
-        System.out.println(isPrime ? "Prime" : "Not Prime");
-        sc.close();
-    }
-}
-```
----
-## Problem 3 – Reverse Digits
-**Statement**: Read an integer (may be negative) and output its digits in reverse order, preserving the sign.
-**Input**: One integer `x`.
-**Output**: The reversed integer (e.g., `-123` → `-321`).
-
-### Solution (`ReverseDigits.java`)
-```java
-import java.util.Scanner;
-
-public class ReverseDigits {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt(); // read x
-        int sign = x < 0 ? -1 : 1;
-        x = Math.abs(x);
-        int reversed = 0;
-        while (x > 0) {
-            int digit = x % 10;
-            reversed = reversed * 10 + digit;
-            x /= 10;
-        }
-        System.out.println(sign * reversed);
-        sc.close();
-    }
-}
-```
----
-### How to Test
-1. Save each snippet in a file with the exact class name (`MultiplicationTable.java`, `PrimeChecker.java`, `ReverseDigits.java`).
-2. Compile: `javac <FileName>.java`
-3. Run: `java <ClassName>` and provide the required input.
-4. Verify the console output matches the expected format shown above.
-
-Feel free to experiment with additional test cases or modify the code to explore other control‑flow constructs!
-# Chapter 2 – Additional Solutions (Control Flow)
-
-Here are the Java solutions for the additional practice problems.
+This file contains the annotated solutions for all Chapter 2 challenges.
 
 ---
 
-## Solution 4: Fibonacci Series (`Fibonacci.java`)
+## Part 1: General Logic
+
+### Solution 1 – Fibonacci Series (`Fibonacci.java`)
 ```java
 import java.util.Scanner;
 
@@ -100,123 +14,201 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        
-        int first = 0, second = 1;
-        
+        int a = 0, b = 1;
         for (int i = 1; i <= n; i++) {
-            System.out.print(first + " ");
-            
-            // Calculate next term
-            int next = first + second;
-            first = second;
-            second = next;
+            System.out.print(a + " ");
+            int next = a + b;
+            a = b;
+            b = next;
         }
         sc.close();
     }
 }
 ```
-**Logic**: We maintain two variables `first` and `second`. In each step, we print `first`, then update them so `first` becomes `second` and `second` becomes their sum.
+**Output**:
+```text
+Input: 5
+0 1 1 2 3 
+```
 
 ---
 
-## Solution 5: Leap Year Checker (`LeapYear.java`)
-```java
-import java.util.Scanner;
+## Part 2: forEach Loop Solutions
 
-public class LeapYear {
+### Solution 4 – City Tour (`CityTour.java`)
+```java
+public class CityTour {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int year = sc.nextInt();
-        
-        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-            System.out.println("Leap Year");
-        } else {
-            System.out.println("Not a Leap Year");
+        String[] cities = {"Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai"};
+        for (String city : cities) {
+            System.out.println("Visiting: " + city);
         }
-        sc.close();
     }
 }
 ```
-**Logic**: A leap year is divisible by 4. However, if it's a century year (divisible by 100), it must also be divisible by 400.
+**Output**:
+```text
+Visiting: Mumbai
+Visiting: Delhi
+Visiting: Bangalore
+Visiting: Hyderabad
+Visiting: Chennai
+```
 
 ---
 
-## Solution 6: Palindrome Number (`Palindrome.java`)
+### Solution 5 – Total Score (`TotalScore.java`)
 ```java
-import java.util.Scanner;
-
-public class Palindrome {
+public class TotalScore {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int original = n;
-        int reversed = 0;
-        
-        while (n > 0) {
-            int digit = n % 10;
-            reversed = reversed * 10 + digit;
-            n /= 10;
+        int[] scores = {80, 90, 70, 85, 95};
+        int total = 0;
+        for (int score : scores) {
+            total += score;
         }
-        
-        if (original == reversed) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not a Palindrome");
-        }
-        sc.close();
+        System.out.println(total);
     }
 }
 ```
-**Logic**: We reverse the number using a `while` loop (same logic as Problem 3) and then compare the `reversed` value with the `original` value.
-
----
-
-## Solution 7: Sum of Digits (`SumDigits.java`)
-```java
-import java.util.Scanner;
-
-public class SumDigits {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int sum = 0;
-        
-        while (n > 0) {
-            sum += (n % 10); // Add the last digit
-            n /= 10;         // Remove the last digit
-        }
-        
-        System.out.println(sum);
-        sc.close();
-    }
-}
+**Output**:
+```text
+420
 ```
-**Logic**: We use `% 10` to get the last digit and `/ 10` to discard it, accumulating the sum in each iteration.
 
 ---
 
-## Solution 8: Star Pattern (`StarPattern.java`)
+### Solution 6 – The Highest Peak (`HighestPeak.java`)
 ```java
-import java.util.Scanner;
-
-public class StarPattern {
+public class HighestPeak {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int h = sc.nextInt();
-        
-        // Outer loop for rows
-        for (int i = 1; i <= h; i++) {
-            // Inner loop for stars in each row
-            for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+        int[] heights = {1200, 4500, 8848, 3200};
+        int max = heights[0];
+        for (int h : heights) {
+            if (h > max) {
+                max = h;
             }
-            // New line after each row
-            System.out.println();
         }
+        System.out.println(max);
+    }
+}
+```
+**Output**:
+```text
+8848
+```
+
+---
+
+### Solution 7 – Counting Evens (`EvenCounter.java`)
+```java
+public class EvenCounter {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        int count = 0;
+        for (int n : numbers) {
+            if (n % 2 == 0) {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+```
+**Output**:
+```text
+5
+```
+
+---
+
+### Solution 8 – Security Check (`SecurityCheck.java`)
+```java
+import java.util.Scanner;
+
+public class SecurityCheck {
+    public static void main(String[] args) {
+        String[] allowed = {"Alice", "Bob", "Charlie"};
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        
+        boolean found = false;
+        for (String guest : allowed) {
+            if (guest.equalsIgnoreCase(input)) {
+                found = true;
+                break;
+            }
+        }
+        
+        System.out.println(found ? "Access Granted" : "Access Denied");
         sc.close();
     }
 }
 ```
-**Logic**: The outer loop controls the number of rows (`i`). The inner loop prints stars (`j`) from 1 up to the current row number `i`.
+**Output**:
+```text
+Input: Bob
+Access Granted
+```
 
 ---
+
+### Solution 9 – Fruit Filter (`FruitFilter.java`)
+```java
+public class FruitFilter {
+    public static void main(String[] args) {
+        String[] fruits = {"Apple", "Banana", "Kiwi", "Orange", "Grape"};
+        for (String f : fruits) {
+            if (f.length() > 5) {
+                System.out.println(f);
+            }
+        }
+    }
+}
+```
+**Output**:
+```text
+Banana
+Orange
+```
+
+---
+
+### Solution 10 – Weather Station (`TempConverter.java`)
+```java
+public class TempConverter {
+    public static void main(String[] args) {
+        double[] celsius = {0.0, 25.0, 100.0};
+        for (double c : celsius) {
+            double f = (c * 9/5) + 32;
+            System.out.println(f);
+        }
+    }
+}
+```
+**Output**:
+```text
+32.0
+77.0
+212.0
+```
+
+---
+
+### Solution 11 – Billing System (`GSTCalculator.java`)
+```java
+public class GSTCalculator {
+    public static void main(String[] args) {
+        double[] prices = {100.0, 200.0, 50.0};
+        for (double p : prices) {
+            double finalPrice = p + (p * 0.18);
+            System.out.println(finalPrice);
+        }
+    }
+}
+```
+**Output**:
+```text
+118.0
+236.0
+59.0
+```
