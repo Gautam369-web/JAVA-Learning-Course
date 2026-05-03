@@ -1,4 +1,4 @@
-# Chapter 8 – Multithreading & Concurrency Solutions
+# Chapter 9 – Multithreading & Concurrency Solutions
 
 These solutions demonstrate how to create threads, manage their timing, and protect shared data.
 

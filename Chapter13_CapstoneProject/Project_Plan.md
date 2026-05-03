@@ -1,4 +1,4 @@
-# Chapter 9 – Final Capstone Project
+# Chapter 13 – Final Capstone Project
 
 Congratulations on reaching the final chapter! It's time to combine everything you've learned—from basic syntax to multithreading—into a single, real-world application.
 
@@ -8,16 +8,16 @@ Congratulations on reaching the final chapter! It's time to combine everything y
 Build a system that allows users to manage a collection of books, save them to a file, search using modern streams, and handle multiple user requests safely.
 
 ### 🧩 Concepts to Include:
-1.  **OOP (Chapter 3)**: Use classes like `Book` and `Member` with Encapsulation.
-2.  **Collections (Chapter 4)**: Use an `ArrayList` to store the library's books.
-3.  **Exception Handling (Chapter 5)**: Use try-catch to handle invalid user inputs or file errors.
-4.  **File I/O (Chapter 6)**: Save and Load the library data to/from a `library.txt` file.
-5.  **Functional Programming (Chapter 7)**: Use Streams and Lambdas to search for books by author or price.
-6.  **Multithreading (Chapter 8)**: Simulate a background "Auto-Save" feature using a separate thread.
+1.  **OOP (Chapter 4)**: Use classes like `Book` and `Member` with Encapsulation.
+2.  **Collections (Chapter 5)**: Use an `ArrayList` to store the library's books.
+3.  **Exception Handling (Chapter 6)**: Use try-catch to handle invalid user inputs or file errors.
+4.  **File I/O (Chapter 7)**: Save and Load the library data to/from a `library.txt` file.
+5.  **Functional Programming (Chapter 8)**: Use Streams and Lambdas to search for books by author or price.
+6.  **Multithreading (Chapter 9)**: Simulate a background "Auto-Save" feature using a separate thread.
 
 ---
 
-## 9.1 Project Requirements
+## 13.1 Project Requirements
 
 ### 1. Functional Requirements:
 - **Add Book**: User can enter title, author, and price.
@@ -33,7 +33,7 @@ Build a system that allows users to manage a collection of books, save them to a
 
 ---
 
-## 9.2 Step-by-Step Roadmap
+## 13.2 Step-by-Step Roadmap
 
 1.  **Phase 1**: Define the `Book` class and the `Library` structure.
 2.  **Phase 2**: Implement the Menu using a `while` loop and `Scanner`.

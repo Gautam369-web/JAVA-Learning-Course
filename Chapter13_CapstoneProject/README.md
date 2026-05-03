@@ -1,4 +1,4 @@
-# Chapter 9 – Final Capstone Project (Smart Library)
+# Chapter 13 – Final Capstone Project (Smart Library)
 
 This is the final milestone of your Java journey. This project demonstrates how a professional Java application is structured.
 

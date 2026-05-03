@@ -1,4 +1,4 @@
-# Chapter 8 – Multithreading & Concurrency Practice Questions
+# Chapter 9 – Multithreading & Concurrency Practice Questions
 
 These 8 questions are designed to test your ability to run tasks in parallel and manage shared data safely.
 

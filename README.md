@@ -181,9 +181,177 @@ This document outlines a **step‑by‑step learning roadmap** for mastering Jav
 
 ---
 
-## How to Use This Plan
-1. **Read each chapter** – Focus on the explanations and code snippets.
-2. **Solve the practice problems** – They reinforce concepts.
-3. **Review & Iterate** – Revisit any sub‑topic that felt unclear.
+## Chapter 14 – Git, GitHub, Packages & Project Structure
+### Goals
+- Track code history with **Git** and understand collaboration with **GitHub**.
+- Organize Java classes with **packages**, **imports**, and clean project layout.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| Git basics | `init`, `status`, `add`, `commit`, `log` |
+| GitHub workflow | Remote repositories, branches, pull requests |
+| Packages & imports | Professional Java organization |
+| `.gitignore` | Avoid committing generated files |
 
-Happy coding! 🚀
+---
+
+## Chapter 15 – Maven & Gradle
+### Goals
+- Build Java projects using professional build tools.
+- Manage dependencies, tests, and packaged JAR files.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| Maven structure | `src/main/java`, `src/test/java`, `pom.xml` |
+| Dependencies | Add JUnit, Jackson, Spring libraries |
+| Build lifecycle | `compile`, `test`, `package` |
+| Gradle basics | Compare Maven and Gradle syntax |
+
+---
+
+## Chapter 16 – Data Structures & Algorithms
+### Goals
+- Build interview and problem-solving strength using Java.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| Big-O | Time and space complexity |
+| Arrays & strings | Searching, counting, reversing |
+| Stack & queue | LIFO and FIFO problems |
+| Sorting & recursion | Bubble sort, binary search, factorial |
+| Trees & graphs | BFS/DFS foundations |
+
+---
+
+## Chapter 17 – Modern Java
+### Goals
+- Learn current Java language features used in modern projects.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| `var` | Local variable type inference |
+| Records | Compact immutable data classes |
+| Switch expressions | Cleaner branching |
+| Text blocks | Multi-line strings |
+| Sealed classes | Controlled inheritance |
+| Pattern matching | Safer `instanceof` checks |
+
+---
+
+## Chapter 18 – JVM, Memory & Garbage Collection
+### Goals
+- Understand how Java runs behind the scenes.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| JVM flow | Source, bytecode, execution |
+| Stack & heap | Method memory vs object memory |
+| Garbage collection | Automatic cleanup |
+| Memory leaks | Objects kept alive accidentally |
+| String pool | Literal reuse and equality |
+
+---
+
+## Chapter 19 – Logging, JSON & HTTP
+### Goals
+- Communicate with APIs and handle real application data.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| Logging | `INFO`, `WARN`, `ERROR`, debug thinking |
+| JSON | API data format |
+| Jackson/Gson | Serialize and deserialize objects |
+| HTTP | Methods and status codes |
+| Java HTTP Client | Send GET and POST requests |
+
+---
+
+## Chapter 20 – Design Patterns & Clean Code
+### Goals
+- Write code that is easier to change, test, and understand.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| Clean code | Naming, small methods, low duplication |
+| SOLID basics | Responsibility and dependency design |
+| Factory | Object creation pattern |
+| Builder | Complex object construction |
+| Strategy | Swappable behavior |
+| MVC | Separate model, view, controller |
+
+---
+
+## Chapter 21 – Spring Boot Basics
+### Goals
+- Move from core Java to backend application development.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| Spring Boot app | `@SpringBootApplication` |
+| Dependency injection | Constructor injection |
+| Components | `@Service`, `@Repository`, `@RestController` |
+| Configuration | `application.properties` |
+| Layers | Controller, service, repository |
+
+---
+
+## Chapter 22 – REST API Development
+### Goals
+- Build clean HTTP APIs with Spring Boot.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| REST endpoints | Resource-based URLs |
+| Controllers | `GET`, `POST`, `PUT`, `DELETE` |
+| DTOs | Request and response models |
+| Status codes | `200`, `201`, `204`, `400`, `404` |
+| Error handling | `@ControllerAdvice` |
+
+---
+
+## Chapter 23 – JPA & Hibernate
+### Goals
+- Persist Java objects into relational databases.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| ORM | Object-relational mapping |
+| Entities | `@Entity`, `@Id`, `@GeneratedValue` |
+| Repositories | Spring Data JPA |
+| Relationships | `@OneToMany`, `@ManyToOne` |
+| Transactions | `@Transactional` consistency |
+
+---
+
+## Chapter 24 – Mockito & Advanced Testing
+### Goals
+- Test services, controllers, and repositories professionally.
+### Sub-topics
+| Topic | Highlights |
+|---|---|
+| Unit vs integration | Test scope |
+| Mockito | `@Mock`, `@InjectMocks`, stubbing |
+| Verification | `verify`, `never`, `any` |
+| MockMvc | Controller tests |
+| DataJpaTest | Repository tests |
+
+---
+
+## Chapter 25 – Final Backend Capstone
+### Goals
+- Build a portfolio-level Java backend project.
+### Project
+- **Student Course Management API**: Spring Boot REST API with database persistence, validation, error handling, tests, GitHub-ready documentation, and deployment preparation.
+
+---
+
+## How to Use This Plan
+1. **Read each chapter** – Start with the notes and run the code examples.
+2. **Solve the practice problems** – They move from beginner to advanced inside each chapter.
+3. **Use full chapter practice** – Chapters 14 to 25 also include `Full_Practice_Questions.md` with complete problem statements and input/output samples.
+4. **Use the full problem bank** – Open `FULL_PROBLEM_STATEMENTS_AND_ANSWERS.md` for chapter-wise full problem statements, input/output samples, explanations, and complete answers.
+5. **Check the solutions only after trying** – Use them to compare approach, not to memorize.
+6. **Build the projects** – The capstones are where the knowledge becomes real skill.
+7. **Review & Iterate** – Revisit any sub‑topic that felt unclear.
+
+This course is now designed as a **Java 0 to Hero** path: core syntax, OOP, tools, DSA, modern Java, backend development, testing, and final portfolio project.

@@ -1,10 +1,10 @@
-# Chapter 8 – Multithreading & Concurrency
+# Chapter 9 – Multithreading & Concurrency
 
 Normally, a Java program runs line-by-line in a single sequence. **Multithreading** allows you to break your program into multiple "threads" that run at the same time, making your applications faster and more responsive.
 
 ---
 
-## Goals of Chapter 8
+## Goals of Chapter 9
 - **Understand Parallelism**: Learn how to do multiple tasks simultaneously.
 - **Master Thread Creation**: Learn the two ways to create threads in Java.
 - **Control Thread Flow**: Use `sleep()`, `join()`, and `yield()` to manage timing.
@@ -14,15 +14,15 @@ Normally, a Java program runs line-by-line in a single sequence. **Multithreadin
 ## Sub-topics
 | Section | Topic | Description |
 | :--- | :--- | :--- |
-| **8.1** | **Intro to Multithreading** | The "Restaurant" concept |
-| **8.2** | **Creating Threads** | Thread class vs. Runnable interface |
-| **8.3** | **Thread Lifecycle** | The stages of a thread's life |
-| **8.4** | **Synchronization** | Preventing "Race Conditions" |
-| **8.5** | **Executor Service** | Managing a pool of threads |
+| **9.1** | **Intro to Multithreading** | The "Restaurant" concept |
+| **9.2** | **Creating Threads** | Thread class vs. Runnable interface |
+| **9.3** | **Thread Lifecycle** | The stages of a thread's life |
+| **9.4** | **Synchronization** | Preventing "Race Conditions" |
+| **9.5** | **Executor Service** | Managing a pool of threads |
 
 ---
 
-## 8.1 Intro to Multithreading: The "Restaurant"
+## 9.1 Intro to Multithreading: The "Restaurant"
 
 ### 🍽️ Real-Life Analogy
 Imagine a **Restaurant** with only **one waiter**.
@@ -36,7 +36,7 @@ A **Process** is the restaurant itself. A **Thread** is a waiter inside the rest
 
 ---
 
-## 8.2 Creating Threads: Two Ways
+## 9.2 Creating Threads: Two Ways
 
 ### 🎭 Real-Life Analogy
 1.  **Extending Thread**: Like hiring a specialist waiter who only knows how to wait tables. 
@@ -76,7 +76,7 @@ Thread-1 is working: 2
 
 ---
 
-## 8.3 Synchronization: The "Bathroom"
+## 9.3 Synchronization: The "Bathroom"
 
 ### 🚽 Real-Life Analogy
 Imagine a **Single Bathroom** in a house.
@@ -125,7 +125,7 @@ Final Count: 2000
 
 ---
  
-## 8.4 Thread Sleep & Join: "The Waiting Game"
+## 9.4 Thread Sleep & Join: "The Waiting Game"
  
 ### 💤 Real-Life Analogy
 - **Sleep**: Like taking a **Power Nap**. You set an alarm for 5 minutes (`Thread.sleep(5000)`) and stop working until the alarm goes off.
@@ -137,7 +137,7 @@ Final Count: 2000
  
 ---
  
-## 8.5 Executor Service: The "Manager"
+## 9.5 Executor Service: The "Manager"
  
 ### 👔 Real-Life Analogy
 Instead of you personally hiring and firing every waiter (creating and destroying threads), you hire a **Manager** (Executor Service).
@@ -178,6 +178,6 @@ Task 4 handled by pool-1-thread-2
  
 ---
  
-## 8.6 Practice Questions (Chapter 8)
+## 9.6 Practice Questions (Chapter 9)
  
 *Ready to run tasks in parallel? Check the Practice_Questions.md file for 8 challenges on Multithreading and Concurrency!*
