@@ -15,8 +15,9 @@ Programs don't just run in a straight line. They make decisions, repeat tasks, a
 | :--- | :--- | :--- |
 | **2.1** | **Conditionals** | The "Traffic Light" concept (`if`, `else`, `switch`) |
 | **2.2** | **Loops** | The "Running Laps" concept (`for`, `while`, `do-while`) |
-| **2.3** | **Loop Control** | Using `break` and `continue` |
-| **2.4** | **Nested Loops** | Building grids and tables |
+| **2.3** | **Enhanced for Loop** | Iterating through collections |
+| **2.4** | **Loop Control** | Using `break` and `continue` |
+| **2.5** | **Nested Loops** | Building grids and tables |
 
 ---
 
@@ -52,6 +53,7 @@ char grade = 'B';
 switch (grade) {
     case 'A': System.out.println("Excellent"); break;
     case 'B': System.out.println("Good"); break;
+    case 'C': System.out.println("Average"); break;
     default: System.out.println("Needs improvement");
 }
 ```
@@ -65,42 +67,81 @@ Good
 ## 2.2 Loops: The "Running Laps"
 
 ### 🏃 Real-Life Analogy
-Imagine a coach tells you to run **5 Laps** around a track.
-- **`for` loop**: You know exactly how many laps to run (5). You count them as you go.
-- **`while` loop**: You run "while" your coach is still watching. You don't know how many laps that will be!
-- **`do-while` loop**: You run at least one lap, and then check if the coach is still there.
+Imagine a coach tells you to run laps around a track.
 
-### 💡 Human Understanding
-- Use a **`for` loop** when you know the end point.
-- Use a **`while` loop** when the end point depends on something else.
-
-### 💻 Code Implementation (for)
+### 1. `for` Loop: The "Fixed Laps"
+Use this when you know **exactly** how many times to repeat.
 ```java
-for (int i = 1; i <= 5; i++) {
-    System.out.println("Lap " + i);
+for (int i = 1; i <= 3; i++) {
+    System.out.println("Running lap " + i);
 }
 ```
 **Output**:
 ```text
-Lap 1
-Lap 2
-Lap 3
-Lap 4
-Lap 5
+Running lap 1
+Running lap 2
+Running lap 3
+```
+
+### 2. `while` Loop: The "Condition Laps"
+Use this when you want to repeat **as long as** something is true (but you don't know when it will stop).
+```java
+int energy = 3;
+while (energy > 0) {
+    System.out.println("Running... Energy left: " + energy);
+    energy--;
+}
+```
+**Output**:
+```text
+Running... Energy left: 3
+Running... Energy left: 2
+Running... Energy left: 1
+```
+
+### 3. `do-while` Loop: The "At Least Once"
+This loop executes the code **first**, and then checks the condition. It is guaranteed to run at least once.
+```java
+int count = 5;
+do {
+    System.out.println("This will print even if the condition is false!");
+} while (count < 1);
+```
+**Output**:
+```text
+This will print even if the condition is false!
 ```
 
 ---
 
-## 2.3 Loop Control: "The Shortcut"
+## 2.3 Enhanced for Loop: The "Scanner"
+This is a modern, easier way to look at every item in a list or array.
+```java
+int[] scores = {90, 85, 77};
+for (int s : scores) {
+    System.out.println("Score: " + s);
+}
+```
+**Output**:
+```text
+Score: 90
+Score: 85
+Score: 77
+```
+
+---
+
+## 2.4 Loop Control: "The Shortcut"
 
 ### 🛑 Real-Life Analogy
-- **`break`**: You are running your laps, but you twist your ankle. You **stop immediately** and go home.
-- **`continue`**: You are running, and you see a puddle. you **skip that one spot** and keep running the rest of the lap.
+- **`break`**: You stop the entire workout immediately.
+- **`continue`**: You skip the rest of the current lap and start the next one.
 
 ### 💻 Code Implementation
 ```java
 for (int i = 1; i <= 5; i++) {
     if (i == 3) continue; // Skip lap 3
+    if (i == 5) break;    // Stop at 5
     System.out.println("Running lap " + i);
 }
 ```
@@ -109,18 +150,11 @@ for (int i = 1; i <= 5; i++) {
 Running lap 1
 Running lap 2
 Running lap 4
-Running lap 5
 ```
 
 ---
 
-## 2.4 Nested Loops: The "Calendar"
-
-### 📅 Real-Life Analogy
-Think of a **Calendar**.
-- The "Outer Loop" moves through the **Months**.
-- For every month, the "Inner Loop" moves through the **Days**.
-This creates a grid of data.
+## 2.5 Nested Loops: The "Calendar"
 
 ### 💻 Code Implementation (3x3 Table)
 ```java
@@ -140,6 +174,6 @@ for (int i = 1; i <= 3; i++) {
 
 ---
 
-## 2.5 Practice Problems (Chapter 2)
+## 2.6 Practice Questions (Chapter 2)
 
 *Ready to control the flow? Check the Practice_Questions.md file for 8 logic challenges!*
