@@ -9,7 +9,11 @@ These 8 questions are designed to test your understanding of each sub-topic cove
 **Problem Statement**: Create a `Smartphone` class.
 - **Fields**: `brand`, `model`, `price`.
 - **Method**: `displayInfo()` that prints "This is a [brand] [model] costing $[price]".
-**Sample Input**: None (Values set in code)
+
+**Sample Input**:
+```text
+None (Values set in code)
+```
 **Sample Output**: 
 ```text
 This is a Apple iPhone 15 costing $999.0
@@ -25,7 +29,10 @@ This is a Samsung Galaxy S23 costing $899.0
 - **Constructor**: Use `this` to initialize `name` and `grade` when a student is created.
 - **Task**: Create a student object by passing "Rahul" and "A" to the constructor, then print the result.
 
-**Sample Input**: None (Passed to constructor)
+**Sample Input**:
+```text
+None (Passed to constructor)
+```
 **Sample Output**: 
 ```text
 Student Rahul is in grade A
@@ -42,7 +49,10 @@ Student Rahul is in grade A
     - `getPassword()`: Returns the password.
 - **Task**: Try setting a 4-character password and then an 8-character one. 
 
-**Sample Input**: None (Hardcoded tests)
+**Sample Input**:
+```text
+None (Hardcoded tests)
+```
 **Sample Output**: 
 ```text
 Error: Password too short!
@@ -59,7 +69,10 @@ Password: secret123
 - **Constructor**: Every time a `Book` is created, increment `totalBooks`.
 - **Task**: Create 3 different books and print the total count.
 
-**Sample Input**: None
+**Sample Input**:
+```text
+None
+```
 **Sample Output**: 
 ```text
 Total books in library: 3
@@ -74,7 +87,10 @@ Total books in library: 3
 - **Programmer**: Inherits from `Human` and adds a method `code()` that prints "Coding...".
 - **Task**: Create a `Programmer` object and show its capabilities.
 
-**Sample Input**: None
+**Sample Input**:
+```text
+None
+```
 **Sample Output**: 
 ```text
 Walking...
@@ -91,7 +107,10 @@ Coding...
 - **Lion**: Overrides `makeSound()` to print "Roar!".
 - **Task**: Demonstrate how the same method acts differently.
 
-**Sample Input**: None
+**Sample Input**:
+```text
+None
+```
 **Sample Output**: 
 ```text
 Bark!
@@ -108,7 +127,10 @@ Roar!
 - **Subclass `Brush`**: Implements `use()` to print "Painting...".
 - **Task**: Create a `Pen` and a `Brush` and call their `use()` methods.
 
-**Sample Input**: None
+**Sample Input**:
+```text
+None
+```
 **Sample Output**: 
 ```text
 Writing...
@@ -126,7 +148,10 @@ Painting...
     - `Fan`: Prints "Fan is spinning."
 - **Task**: Use the `Switchable` interface to control devices.
 
-**Sample Input**: None
+**Sample Input**:
+```text
+None
+```
 **Sample Output**: 
 ```text
 Light is glowing.
