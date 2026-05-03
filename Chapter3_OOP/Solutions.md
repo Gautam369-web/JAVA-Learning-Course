@@ -1,126 +1,237 @@
-# Chapter 3 – OOP Practice Solutions
+# Chapter 3 – OOP Solutions (Problems 1-8)
 
-These solutions demonstrate the core pillars of Object-Oriented Programming: Class/Object design, Encapsulation, and Polymorphism.
+These solutions correspond to the 8 practice problems in the `Practice_Questions.md` file.
 
 ---
 
-## Solution 9: Library System (`Library.java`)
-**Topic**: Classes, Objects, and Methods
-
+## Solution 1: The Smartphone (Classes & Objects)
 ```java
-class Book {
-    String title;
-    String author;
+class Smartphone {
+    String brand;
+    String model;
     double price;
 
-    // Method to display details
-    void displayDetails() {
-        System.out.println("Title: " + title + ", Author: " + author + ", Price: " + price);
+    void displayInfo() {
+        System.out.println("This is a " + brand + " " + model + " costing $" + price);
     }
 }
 
-public class Library {
+public class Main {
     public static void main(String[] args) {
-        // Creating an object
-        Book myBook = new Book();
-        
-        // Setting fields
-        myBook.title = "Java Basics";
-        myBook.author = "John Doe";
-        myBook.price = 500;
-        
-        // Calling method
-        myBook.displayDetails();
+        Smartphone p1 = new Smartphone();
+        p1.brand = "Apple";
+        p1.model = "iPhone 15";
+        p1.price = 999;
+
+        Smartphone p2 = new Smartphone();
+        p2.brand = "Samsung";
+        p2.model = "Galaxy S23";
+        p2.price = 899;
+
+        p1.displayInfo();
+        p2.displayInfo();
     }
 }
 ```
-**💡 Human Understanding**: 
-We define what a `Book` is (the class) and then create an actual instance of it in memory (`myBook`). This is the most basic building block of Java.
 
 ---
 
-## Solution 10: Bank Account (`BankSystem.java`)
-**Topic**: Encapsulation (Private Fields & Getters/Setters)
-
+## Solution 2: The New Student (Constructors & `this`)
 ```java
-class BankAccount {
-    // Private field - cannot be accessed directly from outside
-    private double balance;
+class Student {
+    String name;
+    String grade;
 
-    // Public method to modify balance safely (Setter-like)
-    public void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
+    Student(String name, String grade) {
+        this.name = name;
+        this.grade = grade;
+    }
+
+    void show() {
+        System.out.println("Student " + name + " is in grade " + grade);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student("Rahul", "A");
+        s.show();
+    }
+}
+```
+
+---
+
+## Solution 3: The Secret Vault (Encapsulation)
+```java
+class User {
+    private String password;
+
+    public void setPassword(String pass) {
+        if (pass.length() > 6) {
+            this.password = pass;
+            System.out.println("Password set successfully.");
         } else {
-            System.out.println("Invalid deposit amount.");
+            System.out.println("Error: Password too short!");
         }
     }
 
-    // Public method to read balance (Getter)
-    public double getBalance() {
-        return balance;
+    public String getPassword() {
+        return password;
     }
 }
 
-public class BankSystem {
+public class Main {
     public static void main(String[] args) {
-        BankAccount account = new BankAccount();
-        
-        account.deposit(100.50);
-        
-        System.out.println("Balance: " + account.getBalance());
-        
-        // account.balance = -500; // This would cause a compile error (Private!)
+        User u = new User();
+        u.setPassword("123");      // Too short
+        u.setPassword("secret123"); // Accepted
+        System.out.println("Password: " + u.getPassword());
     }
 }
 ```
-**💡 Human Understanding**: 
-By making `balance` private, we protect it from being changed to something silly (like a negative value). We only allow changes through the `deposit` method which has a security check.
 
 ---
 
-## Solution 11: Shape Area (`Geometry.java`)
-**Topic**: Inheritance & Polymorphism (Method Overriding)
-
+## Solution 4: The Shared Library (Static Members)
 ```java
-class Shape {
-    // Generic method (to be overridden)
-    double area() {
-        return 0;
+class Book {
+    String title;
+    static int totalBooks = 0;
+
+    Book(String title) {
+        this.title = title;
+        totalBooks++; // Increment shared variable
     }
 }
 
-class Circle extends Shape {
-    double radius;
-    Circle(double r) { this.radius = r; }
-
-    @Override
-    double area() {
-        return 3.14 * radius * radius;
-    }
-}
-
-class Square extends Shape {
-    double side;
-    Square(double s) { this.side = s; }
-
-    @Override
-    double area() {
-        return side * side;
-    }
-}
-
-public class Geometry {
+public class Main {
     public static void main(String[] args) {
-        Shape c = new Circle(5);
-        Shape s = new Square(4);
+        new Book("Java");
+        new Book("Python");
+        new Book("C++");
 
-        System.out.println("Circle Area: " + c.area());
-        System.out.println("Square Area: " + s.area());
+        System.out.println("Total books in library: " + Book.totalBooks);
     }
 }
 ```
-**💡 Human Understanding**: 
-`Circle` and `Square` are both `Shapes` (Inheritance). Even though they are both "Shapes", they calculate area differently. When we call `area()`, Java automatically picks the correct version based on the actual object (Polymorphism).
 
 ---
+
+## Solution 5: Family DNA (Inheritance)
+```java
+class Human {
+    void walk() {
+        System.out.println("Walking...");
+    }
+}
+
+class Programmer extends Human {
+    void code() {
+        System.out.println("Coding...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Programmer p = new Programmer();
+        p.walk(); // Inherited
+        p.code(); // Own method
+    }
+}
+```
+
+---
+
+## Solution 6: Animal Voices (Polymorphism/Overriding)
+```java
+class Animal {
+    void makeSound() {
+        System.out.println("Some sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Bark!");
+    }
+}
+
+class Lion extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Roar!");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a1 = new Dog();
+        Animal a2 = new Lion();
+
+        a1.makeSound();
+        a2.makeSound();
+    }
+}
+```
+
+---
+
+## Solution 7: The Drawing Tool (Abstract Classes)
+```java
+abstract class Tool {
+    abstract void use();
+}
+
+class Pen extends Tool {
+    void use() {
+        System.out.println("Writing...");
+    }
+}
+
+class Brush extends Tool {
+    void use() {
+        System.out.println("Painting...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Tool p = new Pen();
+        Tool b = new Brush();
+        p.use();
+        b.use();
+    }
+}
+```
+
+---
+
+## Solution 8: The Smart Home (Interfaces)
+```java
+interface Switchable {
+    void turnOn();
+}
+
+class Light implements Switchable {
+    public void turnOn() {
+        System.out.println("Light is glowing.");
+    }
+}
+
+class Fan implements Switchable {
+    public void turnOn() {
+        System.out.println("Fan is spinning.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Switchable l = new Light();
+        Switchable f = new Fan();
+        l.turnOn();
+        f.turnOn();
+    }
+}
+```
