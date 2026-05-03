@@ -115,3 +115,113 @@ public class Main {
 ```
 
 ---
+
+## 4.4 HashSet: The "Unique Items Only" Collection
+
+### 🎟️ Real-Life Analogy
+Imagine you are making a **Guest List** for a wedding. 
+- If you accidentally write "John Doe" twice, you still only count him as one guest. 
+- The order in which you wrote the names doesn't really matter; you just want to know *who* is coming and make sure nobody is listed twice.
+A **HashSet** is exactly like this. It **ignores duplicates** and doesn't care about the order.
+
+### 💡 Human Understanding
+A `HashSet` implements the `Set` interface. It's the best choice when you want to store a collection of items where **uniqueness** is more important than order.
+
+### 💻 Code Implementation
+```java
+import java.util.HashSet;
+
+public class Main {
+    public static void main(String[] args) {
+        HashSet<Integer> ticketNumbers = new HashSet<>();
+
+        ticketNumbers.add(101);
+        ticketNumbers.add(102);
+        ticketNumbers.add(101); // DUPLICATE! Java will ignore this.
+
+        System.out.println("Tickets: " + ticketNumbers);
+        System.out.println("Total unique tickets: " + ticketNumbers.size());
+    }
+}
+```
+
+---
+
+## 4.5 HashMap: The "Key-Value" Dictionary
+
+### 📖 Real-Life Analogy
+Think of a **Dictionary**. 
+- You look up a **Word** (The Key) to find its **Definition** (The Value). 
+- Every word is unique (you don't have two entries for the exact same word), but multiple words could have the same meaning.
+A **HashMap** pairs a **Unique Key** with a **Value**.
+
+### 💡 Human Understanding
+A `HashMap` implements the `Map` interface. It's extremely fast for looking up data if you know the "Key".
+
+### 💻 Code Implementation
+```java
+import java.util.HashMap;
+
+public class Main {
+    public static void main(String[] args) {
+        // Key: Student ID (Integer), Value: Name (String)
+        HashMap<Integer, String> students = new HashMap<>();
+
+        // put(key, value) instead of add()
+        students.put(1, "Alice");
+        students.put(2, "Bob");
+        students.put(3, "Charlie");
+
+        // Look up by Key
+        System.out.println("Student with ID 2: " + students.get(2));
+
+        // Printing the whole map
+        System.out.println("All students: " + students);
+    }
+}
+```
+
+---
+
+## 4.6 Iterating & Sorting: Managing the Collection
+
+### 🃏 Real-Life Analogy
+Imagine you have a **Deck of Cards**. 
+- **Iterating**: Flipping through the cards one by one to see what you have.
+- **Sorting**: Arranging the cards from smallest to largest.
+
+### 💡 Human Understanding
+- **Iterator**: An object that lets you step through a collection one by one. It's safer than a `for` loop if you plan to remove items while looping.
+- **`Collections.sort()`**: A built-in tool to arrange lists in order.
+
+### 💻 Code Implementation
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<Integer> numbers = new ArrayList<>();
+        numbers.add(50);
+        numbers.add(10);
+        numbers.add(30);
+
+        // 1. Sorting
+        Collections.sort(numbers);
+        System.out.println("Sorted: " + numbers);
+
+        // 2. Iterating with an Iterator
+        Iterator<Integer> it = numbers.iterator();
+        while(it.hasNext()) {
+            System.out.println("Number: " + it.next());
+        }
+    }
+}
+```
+
+---
+
+## 4.7 Practice Questions (Chapter 4)
+
+*Ready to test your data management skills? Check the Practice_Questions.md file for 8 new challenges!*
