@@ -15,7 +15,7 @@ Programs don't just run in a straight line. They make decisions, repeat tasks, a
 | :--- | :--- | :--- |
 | **2.1** | **Conditionals** | The "Traffic Light" concept (`if`, `else`, `switch`) |
 | **2.2** | **Loops** | The "Running Laps" concept (`for`, `while`, `do-while`) |
-| **2.3** | **Enhanced for Loop** | Iterating through collections |
+| **2.3** | **forEach Loop** | Iterating through collections |
 | **2.4** | **Loop Control** | Using `break` and `continue` |
 | **2.5** | **Nested Loops** | Building grids and tables |
 
@@ -114,7 +114,7 @@ This will print even if the condition is false!
 
 ---
 
-## 2.3 Enhanced for Loop: The "Scanner"
+## 2.3 forEach Loop: The "Scanner"
 This is a modern, easier way to look at every item in a list or array.
 ```java
 int[] scores = {90, 85, 77};
