@@ -6,7 +6,8 @@ import java.util.Scanner;
 
 public class SumTwo {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        // Scanner is used to take input from the user (like a microphone listening to the keyboard)
+        Scanner sc = new Scanner(System.in); 
         int a = sc.nextInt();
         int b = sc.nextInt();
         System.out.println(a + b);
@@ -27,6 +28,7 @@ import java.util.Scanner;
 
 public class EvenOdd {
     public static void main(String[] args) {
+        // Scanner is used to take input from the user
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         if (n % 2 == 0) {
@@ -49,6 +51,7 @@ import java.util.Scanner;
 
 public class CtoF {
     public static void main(String[] args) {
+        // Scanner is used to take input (decimal values) from the user
         Scanner sc = new Scanner(System.in);
         double c = sc.nextDouble();
         double f = c * 9.0 / 5.0 + 32.0;
