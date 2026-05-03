@@ -344,7 +344,3 @@ class Smartphone implements Camera {
 ```
 
 ---
-
-## 3.8 Practice Questions (Chapter 3)
-
-*Ready to solve the challenges? Check the bottom of the file for Problems 9, 10, and 11!*
