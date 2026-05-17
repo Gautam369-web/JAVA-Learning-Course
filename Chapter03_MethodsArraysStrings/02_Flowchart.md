@@ -33,23 +33,23 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([You have an array: int[] scores = 90,85,77,92,65]) --> B
+    A(["You have an array: int[] scores = {90, 85, 77, 92, 65}"]) --> B
 
-    B[Array created in memory:\nIndex: 0=90, 1=85, 2=77, 3=92, 4=65\nLength = 5]
+    B["Array created in memory:\nIndex: 0=90, 1=85, 2=77, 3=92, 4=65\nLength = 5"]
 
     B --> C{What do you want to do?}
 
-    C --> D[Read element:\nscores[2] → 77]
-    C --> E[Modify element:\nscores[1] = 100]
-    C --> F[Get length:\nscores.length → 5]
-    C --> G[Loop through all:\nfor i = 0 to length-1]
+    C --> D["Read element:\nscores[2] → 77"]
+    C --> E["Modify element:\nscores[1] = 100"]
+    C --> F["Get length:\nscores.length → 5"]
+    C --> G["Loop through all:\nfor i = 0 to length-1"]
 
-    G --> H[Access scores[i] for each i]
+    G --> H["Access scores[i] for each i"]
 
-    D & E & F & H --> I{Index valid?\n0 <= index < length}
+    D & E & F & H --> I{"Index valid?\n0 <= index < length"}
 
     I -- ✅ Yes --> J([Operation succeeds])
-    I -- ❌ No: index = 5 or -1 --> K[💥 ArrayIndexOutOfBoundsException!\nProgram crashes]
+    I -- ❌ No: index = 5 or -1 --> K["💥 ArrayIndexOutOfBoundsException!\nProgram crashes"]
 ```
 
 ---
