@@ -112,15 +112,15 @@ JAVA ZERO TO HERO
 ```
 ChapterXX_TopicName/
 │
-├── 🟢 01_ChapterSummary.md      ← [Pillar 4] Big-picture overview of all topics
-├── 🔵 02_Flowchart.md           ← [Pillar 1] Visual flowchart of how the concept works
-├── 🟡 03_Pareto_8020.md         ← [Pillar 2] The 20% concepts that give 80% of results
-├── 📄 04_Notes.md               ← Core lecture notes with analogies & annotated code
-├── 🟠 05_KnowledgeGaps.md       ← [Pillar 3] Gap analysis + simplified explanations
-├── 🔴 06_Visualization.md       ← [Pillar 5] Step-by-step mental imagery exercise
-├── 🟣 07_SelfTest.md            ← [Pillar 6] 10–20 questions from Basic to Advanced
-├── ❓ 08_Practice_Questions.md  ← Coding problems with input/output specs
-└── ✅ 09_Solutions.md           ← Full solutions with explanation
+├── 📄 Notes.md               ← Core lecture notes with analogies & annotated code
+├── 🔵 Flowchart.md           ← [Pillar 1] Visual flowchart of how the concept works
+├── 🟡 Pareto_8020.md         ← [Pillar 2] The 20% concepts that give 80% of results
+├── 🟠 KnowledgeGaps.md       ← [Pillar 3] Gap analysis + simplified explanations
+├── 🟢 ChapterSummary.md      ← [Pillar 4] Big-picture overview of all topics
+├── 🔴 Visualization.md       ← [Pillar 5] Step-by-step mental imagery exercise
+├── 🟣 SelfTest.md            ← [Pillar 6] 10–20 questions from Basic to Advanced
+├── ❓ Practice_Questions.md  ← Coding problems with input/output specs
+└── ✅ Solutions.md           ← Full solutions with explanation
 ```
 
 ---
@@ -181,15 +181,15 @@ ChapterXX_TopicName/
 ### Step 1: Follow the 6-Pillar Path Per Chapter
 For every chapter, read the files **in this order**:
 ```
-1. 01_ChapterSummary.md   → Get the big picture first
-2. 02_Flowchart.md        → See how it all connects
-3. 03_Pareto_8020.md      → Know what's most important
-4. 04_Notes.md            → Learn the actual content
-5. 05_KnowledgeGaps.md    → Check your blind spots
-6. 06_Visualization.md    → Lock it into memory
-7. 07_SelfTest.md         → Test yourself honestly
-8. 08_Practice_Questions.md → Code! Code! Code!
-9. 09_Solutions.md        → Compare only AFTER trying
+1. ChapterSummary.md   → Get the big picture first
+2. Flowchart.md        → See how it all connects
+3. Pareto_8020.md      → Know what's most important
+4. Notes.md            → Learn the actual content
+5. KnowledgeGaps.md    → Check your blind spots
+6. Visualization.md    → Lock it into memory
+7. SelfTest.md         → Test yourself honestly
+8. Practice_Questions.md → Code! Code! Code!
+9. Solutions.md        → Compare only AFTER trying
 ```
 
 ### Step 2: Use the Spaced Repetition Rule
