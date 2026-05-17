@@ -98,6 +98,8 @@ String also_wrong = 'H';// ❌ COMPILE ERROR — 'H' is a char, not String
 ```java
 System.out.println("Line 1"); // Prints "Line 1" then moves cursor to NEXT line
 System.out.println("Line 2"); // Prints "Line 2" on a new line
+//Output: Line 1
+          Line 2
 
 System.out.print("A");        // Prints "A" — cursor stays right after A
 System.out.print("B");        // Prints "B" — same line!
