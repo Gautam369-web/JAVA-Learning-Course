@@ -1,357 +1,363 @@
-# Java Teaching Plan
+# ☕ Java Zero to Hero — A Complete Learning Course
 
-## Overview
-This document outlines a **step‑by‑step learning roadmap** for mastering Java from the very basics to advanced concepts. Each chapter focuses on a core area, provides concise explanations, illustrative code snippets, and ends with **practice problems** that include clear problem statements, input and output specifications.
-
----
-
-## Chapter 1 – Java Foundations
-### Goals
-- Understand the Java ecosystem and the **JDK/JRE**.
-- Write, compile, and run a simple **Hello World** program.
-- Grasp fundamental syntax rules.
-### Sub‑topics
-| Sub‑topic | What you’ll learn |
-|---|---|
-| **Program Structure** | `class`, `main` method, file naming conventions |
-| **Data Types** | Primitive types (`int`, `double`, `char`, `boolean`, etc.) |
-| **Variables & Constants** | Declaration, initialization, `final` keyword |
-| **Operators** | Arithmetic, relational, logical, assignment, ternary |
-| **Input/Output** | `Scanner` for console input, `System.out.println` for output |
-| **Comments** | Single‑line `//`, multi‑line `/* … */`, Javadoc `/** … */` |
+> **"Tell me and I forget. Teach me and I remember. Involve me and I learn."** — Benjamin Franklin
 
 ---
 
-## Chapter 2 – Control Flow
-### Goals
-- Direct program execution using **conditionals** and **loops**.
-### Sub‑topics
-| Sub‑topic | Description |
-|---|---|
-| `if‑else` & `switch` | Branching logic |
-| `for`, `while`, `do‑while` | Repetition constructs |
-| `break` & `continue` | Controlling loop execution |
-| Nested structures | Loops inside loops, conditions inside loops |
+## 🎯 What This Course Is
+
+This is not just a list of Java topics. This is a **fully engineered learning system** designed specifically for beginners who want to become professional Java developers. Every single chapter follows a proven **6-pillar pedagogical framework** so that you don't just *read* Java — you **understand**, **feel**, **test**, and **master** it.
 
 ---
 
-## Chapter 3 – Methods, Arrays & Strings
-### Goals
-- Organize code into reusable **methods**.
-- Master **String** manipulation and text processing.
-- Understand the basics of **Arrays** and **2D Arrays**.
-### Sub‑topics
-| Sub‑topic | Key Points |
-|---|---|
-| **Methods** | Parameters, return types, overloading |
-| **Strings** | Immutability, common methods (`length`, `substring`) |
-| **Arrays** | Declaration, indexing, `length` property |
-| **2D Arrays** | Grids and matrix operations |
+## 🗺️ The 6-Pillar Learning Framework (Used in Every Chapter)
+
+Every chapter in this course is built around **6 powerful learning tools**. Here is what each one does and why it matters:
 
 ---
 
-## Chapter 4 – Object‑Oriented Programming (OOP)
-### Goals
-- Model real‑world entities using **classes** and **objects**.
-- Master **encapsulation**, **inheritance**, **polymorphism**, and **abstraction**.
-### Sub‑topics
-| Sub‑topic | Key Points |
-|---|---|
-| **Classes & Objects** | Fields, methods, constructors |
-| **Access Modifiers** | `public`, `private`, `protected`, default |
-| **`this` Keyword** | Referring to current object |
-| **Static Members** | Class‑level fields/methods |
-| **Inheritance** | `extends`, `super`, method overriding |
-| **Abstract Classes** | Declaring abstract methods |
-| **Interfaces** | Multiple inheritance of type, default methods |
-| **Polymorphism** | Upcasting, dynamic method dispatch |
+### 🔵 Pillar 1 — Flowchart: How Does It Work?
+
+> *"A picture is worth a thousand words."*
+
+Each chapter contains a **detailed Mermaid flowchart** that shows the entire process from start to finish — like a GPS for your brain. Every decision point, every loop, every branch is mapped out visually. Designed for a 16-year-old: **simple language, logical steps, zero jargon**.
+
+**How to read it:** Follow the arrows. Diamond shapes (◇) are decision points ("yes or no?"). Rectangles are actions. Ovals are start/end.
 
 ---
 
-## Chapter 5 – Collections Framework
-### Goals
-- Work with dynamic data structures: **List**, **Set**, **Map**, and their common implementations.
-### Sub‑topics
-| Collection | Typical Implementation |
-|---|---|
-| `List` | `ArrayList`, `LinkedList` |
-| `Set` | `HashSet`, `TreeSet` |
-| `Map` | `HashMap`, `TreeMap` |
-| **Iterators** | `Iterator`, enhanced `for` loop |
-| **Generics** | Type‑safe collections |
+### 🟡 Pillar 2 — The 80/20 Rule: What Actually Matters?
+
+> *"20% of the work produces 80% of the results."* — Vilfredo Pareto
+
+Java has hundreds of features. But **only ~20% of them are used 80% of the time** in real jobs, real exams, and real interviews. This section identifies exactly those concepts so you spend your energy on what's truly important.
 
 ---
 
-## Chapter 6 – Exception Handling
-### Goals
-- Write robust programs that gracefully handle error conditions.
-### Sub‑topics
-| Sub‑topic | Description |
-|---|---|
-| `try‑catch‑finally` | Structure for handling exceptions |
-| Checked vs Unchecked | `Exception` vs `RuntimeException` |
-| Custom Exceptions | Extending `Exception` or `RuntimeException` |
-| Propagation | `throws` clause |
-| Try-with-resources | Safe resource management |
+### 🟠 Pillar 3 — Knowledge Gap Filler: Do You *Really* Understand It?
+
+> *"The first step to learning is admitting what you don't know."*
+
+This section explains each sub-topic in the **simplest possible terms** — as if you've never heard of programming before. It also explicitly identifies **common misconceptions** and **gaps** that beginners fall into, with suggested resources to fix them.
 
 ---
 
-## Chapter 7 – File I/O
-### Goals
-- Read from and write to files, work with persistent data.
-### Sub‑topics
-| Sub‑topic | Details |
-|---|---|
-| `FileReader` / `BufferedReader` | Text input |
-| `FileWriter` / `BufferedWriter` | Text output |
-| `File` class | Managing file metadata |
-| Try-with-resources | Safe file closing |
+### 🟢 Pillar 4 — Book Summary: The Big Picture
+
+> *"Begin with the end in mind."* — Stephen Covey
+
+Before diving into code, you get a **concise summary** of all major topics covered in the chapter. This gives you a mental map before the journey, and a review tool after. Think of it as the **table of contents for your brain**.
 
 ---
 
-## Chapter 8 – Generics & Functional Programming
-### Goals
-- Utilize modern Java constructs: **Lambdas**, **Streams**, and **Functional Interfaces**.
-### Sub‑topics
-| Topic | Highlights |
-|---|---|
-| **Functional Interface** | `@FunctionalInterface`, custom interfaces |
-| **Lambda Expressions** | Syntax and usage |
-| **Stream API** | `filter`, `map`, `reduce`, `collect` |
-| **Generics** | Writing type-safe reusable code |
+### 🔴 Pillar 5 — Visualization Exercise: Feel It, Don't Just Read It
+
+> *"Imagination is more important than knowledge."* — Albert Einstein
+
+Learning is not just about facts. This section guides you through a **step-by-step mental movie** where you **imagine yourself** using the concept in a real-life situation. This technique, used by Olympic athletes and top students alike, dramatically improves memory and understanding.
 
 ---
 
-## Chapter 9 – Multithreading & Concurrency
-### Goals
-- Write multi‑threaded programs for performance and responsiveness.
-### Sub‑topics
-| Concept | Explanation |
-|---|---|
-| `Thread` & `Runnable` | Basic thread creation |
-| `ExecutorService` | Managing thread pools |
-| Synchronization | `synchronized` and thread safety |
-| `join()` & `sleep()` | Controlling thread execution |
+### 🟣 Pillar 6 — Self-Test Questions: Prove You Know It
+
+> *"Without testing, there is no learning — only the illusion of it."*
+
+Each chapter ends with a **comprehensive battery of questions** ranging from Basic to Advanced. These are not simple recall questions — they are designed to **expose gaps**, **build critical thinking**, and **simulate real exam pressure**.
 
 ---
 
-## Chapter 10 – Advanced Tools
-### Goals
-- Master modern Java utilities and metadata.
-### Sub‑topics
-| Topic | Highlights |
-|---|---|
-| **Enums** | Fixed sets of constants |
-| **Date & Time API** | `java.time` package |
-| **Annotations** | Metadata for the compiler |
-| **Wrapper Classes** | Autoboxing and Unboxing |
+## 📚 Course Structure: 25 Chapters
+
+```
+JAVA ZERO TO HERO
+│
+├── 📘 CORE JAVA (Chapters 1–10)
+│   ├── Ch 01 — Java Foundations
+│   ├── Ch 02 — Control Flow
+│   ├── Ch 03 — Methods, Arrays & Strings
+│   ├── Ch 04 — Object-Oriented Programming (OOP)
+│   ├── Ch 05 — Collections Framework
+│   ├── Ch 06 — Exception Handling
+│   ├── Ch 07 — File I/O
+│   ├── Ch 08 — Generics & Functional Programming
+│   ├── Ch 09 — Multithreading & Concurrency
+│   └── Ch 10 — Advanced Tools (Enums, Date/Time, Annotations)
+│
+├── 🧪 QUALITY & DATABASES (Chapters 11–13)
+│   ├── Ch 11 — Unit Testing (JUnit 5)
+│   ├── Ch 12 — Database Connectivity (JDBC)
+│   └── Ch 13 — Capstone Project I
+│
+├── ⚙️ PROFESSIONAL TOOLS (Chapters 14–20)
+│   ├── Ch 14 — Git, GitHub & Project Structure
+│   ├── Ch 15 — Maven & Gradle
+│   ├── Ch 16 — Data Structures & Algorithms (DSA)
+│   ├── Ch 17 — Modern Java (Java 14–21)
+│   ├── Ch 18 — JVM, Memory & Garbage Collection
+│   ├── Ch 19 — Logging, JSON & HTTP
+│   └── Ch 20 — Design Patterns & Clean Code
+│
+└── 🚀 BACKEND DEVELOPMENT (Chapters 21–25)
+    ├── Ch 21 — Spring Boot Basics
+    ├── Ch 22 — REST API Development
+    ├── Ch 23 — JPA & Hibernate
+    ├── Ch 24 — Mockito & Advanced Testing
+    └── Ch 25 — Final Backend Capstone
+```
 
 ---
 
-## Chapter 11 – Unit Testing (JUnit)
-### Goals
-- Ensure code quality and correctness using automated tests.
-### Sub‑topics
-| Topic | Highlights |
-|---|---|
-| **JUnit 5** | Setup and basic assertions |
-| **Test-Driven Development** | The Red-Green-Refactor cycle |
-| **Annotations** | `@Test`, `@BeforeEach`, `@AfterEach` |
+## 🗂️ File Structure Inside Each Chapter
+
+```
+ChapterXX_TopicName/
+│
+├── 📄 Notes.md               ← Core lecture notes with analogies & annotated code
+├── 🔵 Flowchart.md           ← [Pillar 1] Visual flowchart of how the concept works
+├── 🟡 Pareto_8020.md         ← [Pillar 2] The 20% concepts that give 80% of results
+├── 🟠 KnowledgeGaps.md       ← [Pillar 3] Gap analysis + simplified explanations
+├── 🟢 ChapterSummary.md      ← [Pillar 4] Big-picture overview of all topics
+├── 🔴 Visualization.md       ← [Pillar 5] Step-by-step mental imagery exercise
+├── 🟣 SelfTest.md            ← [Pillar 6] 10–20 questions from Basic to Advanced
+├── ❓ Practice_Questions.md  ← Coding problems with input/output specs
+└── ✅ Solutions.md           ← Full solutions with explanation
+```
 
 ---
 
-## Chapter 12 – Database Connectivity (JDBC)
-### Goals
-- Connect Java applications to relational databases.
-### Sub‑topics
-| Topic | Highlights |
-|---|---|
-| **JDBC Drivers** | Connecting to SQL databases |
-| **CRUD Operations** | Create, Read, Update, Delete |
-| **Prepared Statements** | Safe SQL execution |
+## 🧭 Chapter-by-Chapter Roadmap
+
+| # | Chapter | Core Skill | Difficulty |
+|---|---------|-----------|------------|
+| 01 | **Java Foundations** | Write & run your first Java program | 🟢 Beginner |
+| 02 | **Control Flow** | Make decisions & repeat actions | 🟢 Beginner |
+| 03 | **Methods, Arrays & Strings** | Organize code & handle text | 🟢 Beginner |
+| 04 | **OOP** | Model real-world things as objects | 🟡 Intermediate |
+| 05 | **Collections** | Work with lists, sets & maps | 🟡 Intermediate |
+| 06 | **Exception Handling** | Write crash-proof programs | 🟡 Intermediate |
+| 07 | **File I/O** | Read and write files | 🟡 Intermediate |
+| 08 | **Generics & Functional** | Lambda, Streams, type safety | 🟠 Upper-Intermediate |
+| 09 | **Multithreading** | Run code in parallel | 🟠 Upper-Intermediate |
+| 10 | **Advanced Tools** | Enums, Date/Time, Annotations | 🟠 Upper-Intermediate |
+| 11 | **JUnit Testing** | Test your code automatically | 🟡 Intermediate |
+| 12 | **JDBC** | Connect Java to databases | 🟠 Upper-Intermediate |
+| 13 | **Capstone I** | Build a real Java project | 🟠 Upper-Intermediate |
+| 14 | **Git & GitHub** | Version control & collaboration | 🟡 Intermediate |
+| 15 | **Maven & Gradle** | Professional build tools | 🟡 Intermediate |
+| 16 | **DSA** | Algorithms & data structures | 🔴 Advanced |
+| 17 | **Modern Java** | Java 14–21 features | 🟠 Upper-Intermediate |
+| 18 | **JVM & Memory** | How Java runs under the hood | 🔴 Advanced |
+| 19 | **Logging, JSON & HTTP** | Real-world integrations | 🟠 Upper-Intermediate |
+| 20 | **Design Patterns** | Professional code architecture | 🔴 Advanced |
+| 21 | **Spring Boot** | Backend framework basics | 🔴 Advanced |
+| 22 | **REST APIs** | Build HTTP APIs | 🔴 Advanced |
+| 23 | **JPA & Hibernate** | Database ORM | 🔴 Advanced |
+| 24 | **Mockito Testing** | Advanced test automation | 🔴 Advanced |
+| 25 | **Final Capstone** | Full backend project | 🔴 Advanced |
 
 ---
 
-## Chapter 13 – Capstone Project
-### Goals
-- Apply all learned concepts to build a real-world application.
-### Project Ideas
-- **Smart Library System**: Management of books, users, and borrowing logic.
-- **Bank Management System**: Handling transactions with database persistence.
+## ⚡ The 80/20 of ALL of Java (Master List)
+
+> These **10 concepts** form the backbone of ~80% of real Java code. If you understand these deeply, you can read and write most professional Java programs.
+
+| Rank | Concept | Why It's Critical |
+|------|---------|-------------------|
+| 1 | **Classes & Objects** | Everything in Java IS an object |
+| 2 | **Control Flow** | All programs make decisions & repeat |
+| 3 | **Methods** | Code organization & reuse |
+| 4 | **Collections (List/Map)** | 90% of data storage in real apps |
+| 5 | **Exception Handling** | Prevents crashes in production |
+| 6 | **Inheritance & Polymorphism** | Core of scalable design |
+| 7 | **Interfaces** | Blueprint of professional Java code |
+| 8 | **Streams & Lambdas** | Modern, concise data processing |
+| 9 | **String Manipulation** | Used in every single program |
+| 10 | **File I/O / JDBC** | Real programs persist data |
 
 ---
 
-## Chapter 14 – Git, GitHub, Packages & Project Structure
-### Goals
-- Track code history with **Git** and understand collaboration with **GitHub**.
-- Organize Java classes with **packages**, **imports**, and clean project layout.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| Git basics | `init`, `status`, `add`, `commit`, `log` |
-| GitHub workflow | Remote repositories, branches, pull requests |
-| Packages & imports | Professional Java organization |
-| `.gitignore` | Avoid committing generated files |
+## 🚀 How to Use This Course
+
+### Step 1: Follow the 6-Pillar Path Per Chapter
+For every chapter, read the files **in this order**:
+```
+1. ChapterSummary.md   → Get the big picture first
+2. Flowchart.md        → See how it all connects
+3. Pareto_8020.md      → Know what's most important
+4. Notes.md            → Learn the actual content
+5. KnowledgeGaps.md    → Check your blind spots
+6. Visualization.md    → Lock it into memory
+7. SelfTest.md         → Test yourself honestly
+8. Practice_Questions.md → Code! Code! Code!
+9. Solutions.md        → Compare only AFTER trying
+```
+
+### Step 2: Use the Spaced Repetition Rule
+- **Day 1**: Learn the chapter
+- **Day 3**: Re-read Pareto_8020 and do SelfTest again
+- **Day 7**: Try the Practice_Questions from memory
+- **Day 21**: Revisit the KnowledgeGaps section
+
+### Step 3: Code Every Single Day
+> Reading about swimming doesn't make you a swimmer. **Open your IDE every day** and type at least 10 lines of Java.
 
 ---
 
-## Chapter 15 – Maven & Gradle
-### Goals
-- Build Java projects using professional build tools.
-- Manage dependencies, tests, and packaged JAR files.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| Maven structure | `src/main/java`, `src/test/java`, `pom.xml` |
-| Dependencies | Add JUnit, Jackson, Spring libraries |
-| Build lifecycle | `compile`, `test`, `package` |
-| Gradle basics | Compare Maven and Gradle syntax |
+## 🛠️ Setup & Prerequisites
+
+### Required Tools
+| Tool | Purpose | Download |
+|------|---------|---------|
+| **JDK 17 or 21** | The Java compiler and runtime | [oracle.com/java](https://www.oracle.com/java/technologies/downloads/) |
+| **VS Code** or **IntelliJ IDEA** | Your code editor | [code.visualstudio.com](https://code.visualstudio.com) |
+| **Git** | Version control | [git-scm.com](https://git-scm.com) |
+| **Maven** | Build tool (needed from Ch. 15) | Bundled with IntelliJ |
+
+### Verify Your Setup
+```bash
+# Run these in your terminal
+java -version     # Should show: java version "17.x.x" or "21.x.x"
+javac -version    # Should show: javac 17.x.x
+git --version     # Should show: git version 2.x.x
+```
+
+### Hello World — Your First Check
+```java
+// File: HelloWorld.java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("🎉 Java is working! Let's learn!");
+    }
+}
+```
+```bash
+# Compile and run:
+javac HelloWorld.java
+java HelloWorld
+```
+**Expected Output:**
+```
+🎉 Java is working! Let's learn!
+```
 
 ---
 
-## Chapter 16 – Data Structures & Algorithms
-### Goals
-- Build interview and problem-solving strength using Java.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| Big-O | Time and space complexity |
-| Arrays & strings | Searching, counting, reversing |
-| Stack & queue | LIFO and FIFO problems |
-| Sorting & recursion | Bubble sort, binary search, factorial |
-| Trees & graphs | BFS/DFS foundations |
+## 🧠 Learning Tips for Maximum Retention
+
+### 🔬 The Feynman Technique
+After reading a topic, close the book and **explain it out loud** as if you're teaching a 10-year-old. If you get stuck, that's your knowledge gap — go back and re-read that specific part.
+
+### 💪 The Struggle Zone
+Learning happens when things are **slightly difficult** — not too easy (boring) and not too hard (frustrating). If practice questions feel too easy, skip to the Advanced ones. If they feel impossible, start from Basic.
+
+### 🎯 The "So What?" Test
+After learning any concept, ask: *"So what? When would I actually use this in real life?"* If you can answer this, you understand it. If you can't, revisit the Visualization.md file.
+
+### 📝 The Rubber Duck Method
+Keep a rubber duck (or any object) on your desk. When your code breaks, explain the problem to the duck, line by line. You'll solve it 70% of the time before the duck responds. (This is real — professional developers use this.)
 
 ---
 
-## Chapter 17 – Modern Java
-### Goals
-- Learn current Java language features used in modern projects.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| `var` | Local variable type inference |
-| Records | Compact immutable data classes |
-| Switch expressions | Cleaner branching |
-| Text blocks | Multi-line strings |
-| Sealed classes | Controlled inheritance |
-| Pattern matching | Safer `instanceof` checks |
+## 📈 Progress Tracker
+
+Track your completion here. Check off each pillar for every chapter:
+
+| Chapter | Notes | Flowchart | 80/20 | Gaps | Visual | Test | Practice |
+|---------|-------|-----------|-------|------|--------|------|----------|
+| Ch 01 – Foundations | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 02 – Control Flow | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 03 – Methods/Arrays/Strings | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 04 – OOP | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 05 – Collections | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 06 – Exceptions | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 07 – File I/O | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 08 – Generics/Functional | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 09 – Multithreading | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 10 – Advanced Tools | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 11 – JUnit | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 12 – JDBC | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 13 – Capstone I | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 14 – Git & GitHub | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 15 – Maven/Gradle | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 16 – DSA | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 17 – Modern Java | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 18 – JVM & Memory | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 19 – Logging/JSON/HTTP | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 20 – Design Patterns | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 21 – Spring Boot | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 22 – REST APIs | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 23 – JPA & Hibernate | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 24 – Mockito Testing | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
+| Ch 25 – Final Capstone | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ | ☐ |
 
 ---
 
-## Chapter 18 – JVM, Memory & Garbage Collection
-### Goals
-- Understand how Java runs behind the scenes.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| JVM flow | Source, bytecode, execution |
-| Stack & heap | Method memory vs object memory |
-| Garbage collection | Automatic cleanup |
-| Memory leaks | Objects kept alive accidentally |
-| String pool | Literal reuse and equality |
+## 📖 Supplementary Resources
+
+### Free Online Resources
+| Resource | Best For | Link |
+|----------|---------|------|
+| **Oracle Java Docs** | Official reference | [docs.oracle.com/javase](https://docs.oracle.com/javase/17/docs/) |
+| **Baeldung** | Practical tutorials | [baeldung.com](https://www.baeldung.com) |
+| **W3Schools Java** | Quick syntax reference | [w3schools.com/java](https://www.w3schools.com/java/) |
+| **GeeksForGeeks Java** | Algorithm + theory | [geeksforgeeks.org/java](https://www.geeksforgeeks.org/java/) |
+| **LeetCode** | Interview-style problems | [leetcode.com](https://leetcode.com) |
+| **HackerRank Java** | Beginner challenges | [hackerrank.com/java](https://www.hackerrank.com/domains/java) |
+
+### Recommended Books
+| Book | Level | Why It's Great |
+|------|-------|---------------|
+| *Head First Java* (Sierra & Bates) | Beginner | Visual, funny, extremely clear |
+| *Effective Java* (Bloch) | Intermediate+ | Industry bible for Java best practices |
+| *Clean Code* (Martin) | Intermediate+ | Write code that others (and future you) can read |
+| *Introduction to Algorithms* (CLRS) | Advanced | The definitive DSA reference |
+
+### Video Courses
+| Creator | Platform | Link |
+|---------|---------|------|
+| **Telusko (Navin Reddy)** | YouTube | Free, Hindi/English, very beginner-friendly |
+| **Amigoscode** | YouTube/Udemy | Modern Java, Spring Boot focus |
+| **Tim Buchalka** | Udemy | Most comprehensive paid course |
 
 ---
 
-## Chapter 19 – Logging, JSON & HTTP
-### Goals
-- Communicate with APIs and handle real application data.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| Logging | `INFO`, `WARN`, `ERROR`, debug thinking |
-| JSON | API data format |
-| Jackson/Gson | Serialize and deserialize objects |
-| HTTP | Methods and status codes |
-| Java HTTP Client | Send GET and POST requests |
+## 🏆 Milestones & Achievements
+
+Celebrate your progress! Here are the milestones to aim for:
+
+| Milestone | Achievement | Unlocked After |
+|-----------|------------|----------------|
+| 🌱 **Seed** | Ran your first Java program | Ch 01 complete |
+| 🌿 **Sprout** | Wrote a loop and used conditionals | Ch 02 complete |
+| 🌳 **Sapling** | Built a method-based program | Ch 03 complete |
+| 🦁 **OOP Lion** | Designed a class hierarchy | Ch 04 complete |
+| 🏗️ **Builder** | Used Collections in a project | Ch 05 complete |
+| 🛡️ **Guardian** | Handled errors gracefully | Ch 06 complete |
+| 💾 **Archivist** | Read/wrote files and databases | Ch 07 + 12 complete |
+| ⚡ **Thread Bender** | Wrote concurrent code | Ch 09 complete |
+| 🔬 **Quality Engineer** | Wrote JUnit tests | Ch 11 complete |
+| ⚙️ **Toolsmith** | Used Maven/Gradle, Git | Ch 14 + 15 complete |
+| 🧬 **Algorithm Artist** | Solved DSA problems | Ch 16 complete |
+| 🏛️ **Architect** | Applied design patterns | Ch 20 complete |
+| 🚀 **Backend Hero** | Built a Spring Boot REST API | Ch 22 complete |
+| 👑 **Java Zero to Hero** | Completed all 25 chapters | Ch 25 complete |
 
 ---
 
-## Chapter 20 – Design Patterns & Clean Code
-### Goals
-- Write code that is easier to change, test, and understand.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| Clean code | Naming, small methods, low duplication |
-| SOLID basics | Responsibility and dependency design |
-| Factory | Object creation pattern |
-| Builder | Complex object construction |
-| Strategy | Swappable behavior |
-| MVC | Separate model, view, controller |
+## 📜 Course Philosophy
+
+This course is built on three beliefs:
+
+1. **Understanding > Memorization** — You should be able to *reconstruct* any concept from first principles, not just recall it.
+2. **Application > Theory** — Every concept is tied to a real-world use case you can picture.
+3. **Confidence through Testing** — You only truly know something when you can explain it, teach it, and be tested on it under pressure.
 
 ---
 
-## Chapter 21 – Spring Boot Basics
-### Goals
-- Move from core Java to backend application development.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| Spring Boot app | `@SpringBootApplication` |
-| Dependency injection | Constructor injection |
-| Components | `@Service`, `@Repository`, `@RestController` |
-| Configuration | `application.properties` |
-| Layers | Controller, service, repository |
+*"Every expert was once a beginner. The only difference is they didn't quit."*
+
+**Happy Coding! ☕🚀**
 
 ---
 
-## Chapter 22 – REST API Development
-### Goals
-- Build clean HTTP APIs with Spring Boot.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| REST endpoints | Resource-based URLs |
-| Controllers | `GET`, `POST`, `PUT`, `DELETE` |
-| DTOs | Request and response models |
-| Status codes | `200`, `201`, `204`, `400`, `404` |
-| Error handling | `@ControllerAdvice` |
-
----
-
-## Chapter 23 – JPA & Hibernate
-### Goals
-- Persist Java objects into relational databases.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| ORM | Object-relational mapping |
-| Entities | `@Entity`, `@Id`, `@GeneratedValue` |
-| Repositories | Spring Data JPA |
-| Relationships | `@OneToMany`, `@ManyToOne` |
-| Transactions | `@Transactional` consistency |
-
----
-
-## Chapter 24 – Mockito & Advanced Testing
-### Goals
-- Test services, controllers, and repositories professionally.
-### Sub-topics
-| Topic | Highlights |
-|---|---|
-| Unit vs integration | Test scope |
-| Mockito | `@Mock`, `@InjectMocks`, stubbing |
-| Verification | `verify`, `never`, `any` |
-| MockMvc | Controller tests |
-| DataJpaTest | Repository tests |
-
----
-
-## Chapter 25 – Final Backend Capstone
-### Goals
-- Build a portfolio-level Java backend project.
-### Project
-- **Student Course Management API**: Spring Boot REST API with database persistence, validation, error handling, tests, GitHub-ready documentation, and deployment preparation.
-
----
-
-## How to Use This Plan
-1. **Read each chapter** – Start with the notes and run the code examples.
-2. **Solve the practice problems** – They move from beginner to advanced inside each chapter.
-3. **Use full chapter practice** – Chapters 14 to 25 also include `Full_Practice_Questions.md` with complete problem statements and input/output samples.
-4. **Use the full problem bank** – Open `FULL_PROBLEM_STATEMENTS_AND_ANSWERS.md` for chapter-wise full problem statements, input/output samples, explanations, and complete answers.
-5. **Check the solutions only after trying** – Use them to compare approach, not to memorize.
-6. **Build the projects** – The capstones are where the knowledge becomes real skill.
-7. **Review & Iterate** – Revisit any sub‑topic that felt unclear.
-
-This course is now designed as a **Java 0 to Hero** path: core syntax, OOP, tools, DSA, modern Java, backend development, testing, and final portfolio project.
+*Last Updated: May 2026 | Version 2.0 | Java Zero to Hero Course*
